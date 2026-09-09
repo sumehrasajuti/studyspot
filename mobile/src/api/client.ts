@@ -4,7 +4,7 @@ import { BuildingDetail, BuildingSummary, OccupancyStatus, Room } from "../types
 // means the phone itself. Replace this with your computer's local network IP
 // (e.g. 192.168.1.42), which you can find by running `ipconfig` on Windows
 // and looking for "IPv4 Address". Keep the port 3000 and the http:// prefix.
-const API_BASE_URL = "http://192.168.1.81:3000";
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || "http://192.168.1.81:3000";
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${path}`, {
