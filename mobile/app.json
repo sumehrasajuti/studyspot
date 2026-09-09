@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "StudySpot",
+    "slug": "studyspot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.studyspot"
+    },
+    "android": {
+      "package": "com.yourname.studyspot"
+    }
+  }
+}
